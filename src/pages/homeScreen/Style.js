@@ -3,10 +3,7 @@ import { AppColors, Fonts } from '../../constants/constants'
 
 const Style = StyleSheet.create({
     backgroundStyle: {
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        width: '100%',
-        height: '100%',
+        flex: 1,
         padding: 15,
         backgroundColor: AppColors.backgroundColor,
     },
@@ -16,6 +13,7 @@ const Style = StyleSheet.create({
         backgroundColor: AppColors.white,
         borderRadius: 10,
         margin: 10,
+        justifyContent: 'space-between'
     },
     imageStyle: {
         height: 117,
@@ -28,6 +26,8 @@ const Style = StyleSheet.create({
         lineHeight: 18,
         color: AppColors.titleColor,
         fontFamily: Fonts.openSans,
+        marginTop: 8,
+        marginLeft: 8
     },
     viewArticle: {
         fontSize: 12,

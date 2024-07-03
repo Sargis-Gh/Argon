@@ -22,7 +22,7 @@ const FirstScreen = ({ navigation }) => {
                 <TouchableOpacity
                     activeOpacity={1}
                     style={Style.buttonStyle}
-                    onPress={() => navigation.navigate(PageName.tabs)}>
+                    onPress={() => navigation.navigate(PageName.sign)}>
                     <Text>Get started</Text>
                 </TouchableOpacity>
             </View>

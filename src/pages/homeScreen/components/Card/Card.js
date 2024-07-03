@@ -2,16 +2,17 @@ import React from 'react'
 import { View, Image, Text, TouchableOpacity } from 'react-native'
 import Style from '../../Style'
 
-export default Card = ({ imageUri, title, article }) => {
+export default Card = ({ item: { image, title } }) => {
+    // destru
     return (
         <View style={Style.card}>
-            <Image source={imageUri} style={Style.imageStyle} />
-            <View style={{ padding: 10, justifyContent: 'space-between', flex: 1 }}>
-                <Text style={Style.cardTitle}>{title}</Text>
-                <TouchableOpacity>
-                    <Text style={Style.viewArticle}>{article}</Text>
-                </TouchableOpacity>
+            <View>
+                <Image source={image} style={Style.imageStyle} />
+                {!!title && <Text style={Style.cardTitle}>{title}</Text>}
             </View>
+            <TouchableOpacity>
+                <Text style={Style.viewArticle}>View article</Text>
+            </TouchableOpacity>
         </View>
     )
 }

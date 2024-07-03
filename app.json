@@ -1,4 +1,8 @@
 {
   "name": "Argon",
-  "displayName": "Argon"
+  "displayName": "Argon",
+  "slug": "my-app",
+  "sdkVersion": "21.0.0",
+  "privacy": "public",
+  "orientation": "portrait"
 }
