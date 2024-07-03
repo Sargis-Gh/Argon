@@ -13,7 +13,7 @@ let matrix = [
 function rotateMatrix(matrix) {
     let len = matrix.length
     let newMatrix = []
-    for (var i = 0; i < len; i++) {
+    for (let i = 0; i < len; i++) {
         newMatrix.push(new Array(len).fill(0))
     }
     for (let i = 0; i < len; i++) {
